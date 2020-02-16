@@ -1,0 +1,551 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>04-小程序常用组件 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="05-小程序UI组件库.html" />
+    
+    
+    <link rel="prev" href="03-微信小程序开发-首页以及详情页开发.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01-了解小程序.html">
+            
+                <a href="01-了解小程序.html">
+            
+                    
+                    01-了解小程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="02-微信小程序开发之-框架.html">
+            
+                <a href="02-微信小程序开发之-框架.html">
+            
+                    
+                    02-微信小程序开发之-框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="03-微信小程序开发-首页以及详情页开发.html">
+            
+                <a href="03-微信小程序开发-首页以及详情页开发.html">
+            
+                    
+                    03-微信小程序开发-首页以及详情页开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="04-小程序常用组件.html">
+            
+                <a href="04-小程序常用组件.html">
+            
+                    
+                    04-小程序常用组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="05-小程序UI组件库.html">
+            
+                <a href="05-小程序UI组件库.html">
+            
+                    
+                    05-小程序UI组件库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../thanks/README.md">
+            
+                <span>
+            
+                    
+                    感谢
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >04-小程序常用组件</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4E00;&#x3001;&#x5E38;&#x7528;&#x7684;&#x7EC4;&#x4EF6;&#x5730;&#x56FE;&#x4E4B;-map">&#x4E00;&#x3001;&#x5E38;&#x7528;&#x7684;&#x7EC4;&#x4EF6;&#x5730;&#x56FE;&#x4E4B;-map</h1>
+<p><a href="https://developers.weixin.qq.com/miniprogram/dev/component/map.html" target="_blank">https://developers.weixin.qq.com/miniprogram/dev/component/map.html</a></p>
+<table><thead><tr><th>&#x5C5E;&#x6027;</th> <th>&#x7C7B;&#x578B;</th> <th>&#x9ED8;&#x8BA4;&#x503C;</th> <th>&#x5FC5;&#x586B;</th> <th>&#x8BF4;&#x660E;</th> <th>&#x6700;&#x4F4E;&#x7248;&#x672C;</th></tr></thead> <tbody><tr><td>longitude</td> <td>number</td> <td></td> <td>&#x662F;</td> <td>&#x4E2D;&#x5FC3;&#x7ECF;&#x5EA6;</td> <td><a href="../framework/compatibility.html">1.0.0</a></td></tr> <tr><td>latitude</td> <td>number</td> <td></td> <td>&#x662F;</td> <td>&#x4E2D;&#x5FC3;&#x7EAC;&#x5EA6;</td> <td><a href="../framework/compatibility.html">1.0.0</a></td></tr> <tr><td>scale</td> <td>number</td> <td>16</td> <td>&#x5426;</td> <td>&#x7F29;&#x653E;&#x7EA7;&#x522B;&#xFF0C;&#x53D6;&#x503C;&#x8303;&#x56F4;&#x4E3A;3-20</td> <td><a href="../framework/compatibility.html">1.0.0</a></td></tr> <tr><td>markers</td> <td>Array.&lt;marker&gt;</td> <td></td> <td>&#x5426;</td> <td>&#x6807;&#x8BB0;&#x70B9;</td> <td><a href="../framework/compatibility.html">1.0.0</a></td></tr> <tr><td>covers</td> <td>Array.&lt;cover&gt;</td> <td></td> <td>&#x5426;</td> <td><strong>&#x5373;&#x5C06;&#x79FB;&#x9664;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528; markers</strong></td> <td><a href="../framework/compatibility.html">1.0.0</a></td></tr> <tr><td>polyline</td> <td>Array.&lt;polyline&gt;</td> <td></td> <td>&#x5426;</td> <td>&#x8DEF;&#x7EBF;</td> <td><a href="../framework/compatibility.html">1.0.0</a></td></tr> <tr><td>circles</td> <td>Array.&lt;circle&gt;</td> <td></td> <td>&#x5426;</td> <td>&#x5706;</td> <td><a href="../framework/compatibility.html">1.0.0</a></td></tr> <tr><td>controls</td> <td>Array.&lt;control&gt;</td> <td></td> <td>&#x5426;</td> <td>&#x63A7;&#x4EF6;&#xFF08;&#x5373;&#x5C06;&#x5E9F;&#x5F03;&#xFF0C;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528; <a href="cover-view.html">cover-view</a> &#x4EE3;&#x66FF;&#xFF09;</td> <td><a href="../framework/compatibility.html">1.0.0</a></td></tr> <tr><td>include-points</td> <td>Array.&lt;point&gt;</td> <td></td> <td>&#x5426;</td> <td>&#x7F29;&#x653E;&#x89C6;&#x91CE;&#x4EE5;&#x5305;&#x542B;&#x6240;&#x6709;&#x7ED9;&#x5B9A;&#x7684;&#x5750;&#x6807;&#x70B9;</td> <td><a href="../framework/compatibility.html">1.0.0</a></td></tr> <tr><td>show-location</td> <td>boolean</td> <td>false</td> <td>&#x5426;</td> <td>&#x663E;&#x793A;&#x5E26;&#x6709;&#x65B9;&#x5411;&#x7684;&#x5F53;&#x524D;&#x5B9A;&#x4F4D;&#x70B9;</td> <td><a href="../framework/compatibility.html">1.0.0</a></td></tr> <tr><td>polygons</td> <td>Array.&lt;polygon&gt;</td> <td></td> <td>&#x5426;</td> <td>&#x591A;&#x8FB9;&#x5F62;</td> <td><a href="../framework/compatibility.html">2.3.0</a></td></tr> <tr><td>subkey</td> <td>string</td> <td></td> <td>&#x5426;</td> <td>&#x4E2A;&#x6027;&#x5316;&#x5730;&#x56FE;&#x4F7F;&#x7528;&#x7684;key</td> <td><a href="../framework/compatibility.html">2.3.0</a></td></tr> <tr><td>layer-style</td> <td>number</td> <td>1</td> <td>&#x5426;</td> <td>&#x4E2A;&#x6027;&#x5316;&#x5730;&#x56FE;&#x914D;&#x7F6E;&#x7684; style&#xFF0C;&#x4E0D;&#x652F;&#x6301;&#x52A8;&#x6001;&#x4FEE;&#x6539;</td> <td></td></tr> <tr><td>rotate</td> <td>number</td> <td>0</td> <td>&#x5426;</td> <td>&#x65CB;&#x8F6C;&#x89D2;&#x5EA6;&#xFF0C;&#x8303;&#x56F4; 0 ~ 360, &#x5730;&#x56FE;&#x6B63;&#x5317;&#x548C;&#x8BBE;&#x5907; y &#x8F74;&#x89D2;&#x5EA6;&#x7684;&#x5939;&#x89D2;</td> <td><a href="../framework/compatibility.html">2.5.0</a></td></tr> <tr><td>skew</td> <td>number</td> <td>0</td> <td>&#x5426;</td> <td>&#x503E;&#x659C;&#x89D2;&#x5EA6;&#xFF0C;&#x8303;&#x56F4; 0 ~ 40 , &#x5173;&#x4E8E; z &#x8F74;&#x7684;&#x503E;&#x89D2;</td> <td><a href="../framework/compatibility.html">2.5.0</a></td></tr> <tr><td>enable-3D</td> <td>boolean</td> <td>false</td> <td>&#x5426;</td> <td>&#x5C55;&#x793A;3D&#x697C;&#x5757;(&#x5DE5;&#x5177;&#x6682;&#x4E0D;&#x652F;&#x6301;&#xFF09;</td> <td><a href="../framework/compatibility.html">2.3.0</a></td></tr> <tr><td>show-compass</td> <td>boolean</td> <td>false</td> <td>&#x5426;</td> <td>&#x663E;&#x793A;&#x6307;&#x5357;&#x9488;</td> <td><a href="../framework/compatibility.html">2.3.0</a></td></tr> <tr><td>show-scale</td> <td>boolean</td> <td>false</td> <td>&#x5426;</td> <td>&#x663E;&#x793A;&#x6BD4;&#x4F8B;&#x5C3A;&#xFF0C;&#x5DE5;&#x5177;&#x6682;&#x4E0D;&#x652F;&#x6301;</td> <td><a href="../framework/compatibility.html">2.8.0</a></td></tr> <tr><td>enable-overlooking</td> <td>boolean</td> <td>false</td> <td>&#x5426;</td> <td>&#x5F00;&#x542F;&#x4FEF;&#x89C6;</td> <td><a href="../framework/compatibility.html">2.3.0</a></td></tr> <tr><td>enable-zoom</td> <td>boolean</td> <td>true</td> <td>&#x5426;</td> <td>&#x662F;&#x5426;&#x652F;&#x6301;&#x7F29;&#x653E;</td> <td><a href="../framework/compatibility.html">2.3.0</a></td></tr> <tr><td>enable-scroll</td> <td>boolean</td> <td>true</td> <td>&#x5426;</td> <td>&#x662F;&#x5426;&#x652F;&#x6301;&#x62D6;&#x52A8;</td> <td><a href="../framework/compatibility.html">2.3.0</a></td></tr> <tr><td>enable-rotate</td> <td>boolean</td> <td>false</td> <td>&#x5426;</td> <td>&#x662F;&#x5426;&#x652F;&#x6301;&#x65CB;&#x8F6C;</td> <td><a href="../framework/compatibility.html">2.3.0</a></td></tr> <tr><td>enable-satellite</td> <td>boolean</td> <td>false</td> <td>&#x5426;</td> <td>&#x662F;&#x5426;&#x5F00;&#x542F;&#x536B;&#x661F;&#x56FE;</td> <td><a href="../framework/compatibility.html">2.7.0</a></td></tr> <tr><td>enable-traffic</td> <td>boolean</td> <td>false</td> <td>&#x5426;</td> <td>&#x662F;&#x5426;&#x5F00;&#x542F;&#x5B9E;&#x65F6;&#x8DEF;&#x51B5;</td> <td><a href="../framework/compatibility.html">2.7.0</a></td></tr> <tr><td>setting</td> <td>object</td> <td></td> <td>&#x5426;</td> <td>&#x914D;&#x7F6E;&#x9879;</td> <td><a href="../framework/compatibility.html">2.8.2</a></td></tr> <tr><td>bindtap</td> <td>eventhandle</td> <td></td> <td>&#x5426;</td> <td>&#x70B9;&#x51FB;&#x5730;&#x56FE;&#x65F6;&#x89E6;&#x53D1;&#xFF0C;<a href="../framework/compatibility.html">2.9.0</a>&#x8D77;&#x8FD4;&#x56DE;&#x7ECF;&#x7EAC;&#x5EA6;&#x4FE1;&#x606F;</td> <td><a href="../framework/compatibility.html">1.0.0</a></td></tr> <tr><td>bindmarkertap</td> <td>eventhandle</td> <td></td> <td>&#x5426;</td> <td>&#x70B9;&#x51FB;&#x6807;&#x8BB0;&#x70B9;&#x65F6;&#x89E6;&#x53D1;&#xFF0C;<code>e.detail = {markerId}</code></td> <td><a href="../framework/compatibility.html">1.0.0</a></td></tr> <tr><td>bindlabeltap</td> <td>eventhandle</td> <td></td> <td>&#x5426;</td> <td>&#x70B9;&#x51FB;label&#x65F6;&#x89E6;&#x53D1;&#xFF0C;<code>e.detail = {markerId}</code></td> <td><a href="../framework/compatibility.html">2.9.0</a></td></tr> <tr><td>bindcontroltap</td> <td>eventhandle</td> <td></td> <td>&#x5426;</td> <td>&#x70B9;&#x51FB;&#x63A7;&#x4EF6;&#x65F6;&#x89E6;&#x53D1;&#xFF0C;<code>e.detail = {controlId}</code></td> <td><a href="../framework/compatibility.html">1.0.0</a></td></tr> <tr><td>bindcallouttap</td> <td>eventhandle</td> <td></td> <td>&#x5426;</td> <td>&#x70B9;&#x51FB;&#x6807;&#x8BB0;&#x70B9;&#x5BF9;&#x5E94;&#x7684;&#x6C14;&#x6CE1;&#x65F6;&#x89E6;&#x53D1;<code>e.detail = {markerId}</code></td> <td><a href="../framework/compatibility.html">1.2.0</a></td></tr> <tr><td>bindupdated</td> <td>eventhandle</td> <td></td> <td>&#x5426;</td> <td>&#x5728;&#x5730;&#x56FE;&#x6E32;&#x67D3;&#x66F4;&#x65B0;&#x5B8C;&#x6210;&#x65F6;&#x89E6;&#x53D1;</td> <td><a href="../framework/compatibility.html">1.6.0</a></td></tr> <tr><td>bindregionchange</td> <td>eventhandle</td> <td></td> <td>&#x5426;</td> <td>&#x89C6;&#x91CE;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#x89E6;&#x53D1;&#xFF0C;</td> <td><a href="../framework/compatibility.html">2.3.0</a></td></tr> <tr><td>bindpoitap</td> <td>eventhandle</td> <td></td> <td>&#x5426;</td> <td>&#x70B9;&#x51FB;&#x5730;&#x56FE;poi&#x70B9;&#x65F6;&#x89E6;&#x53D1;&#xFF0C;<code>e.detail = {name, longitude, latitude}</code></td> <td><a href="../framework/compatibility.html">2.3.0</a></td></tr></tbody></table>
+
+<h1 id="1marker">1.marker</h1>
+<h2 id="11-marker">1.1 marker</h2>
+<p>&#x6807;&#x8BB0;&#x70B9;&#x7528;&#x4E8E;&#x5728;&#x5730;&#x56FE;&#x4E0A;&#x663E;&#x793A;&#x6807;&#x8BB0;&#x7684;&#x4F4D;&#x7F6E;</p>
+<table><thead><tr><th>&#x5C5E;&#x6027;</th> <th>&#x8BF4;&#x660E;</th> <th>&#x7C7B;&#x578B;</th> <th>&#x5FC5;&#x586B;</th> <th>&#x5907;&#x6CE8;</th> <th>&#x6700;&#x4F4E;&#x7248;&#x672C;</th></tr></thead> <tbody><tr><td>id</td> <td>&#x6807;&#x8BB0;&#x70B9; id</td> <td>number</td> <td>&#x5426;</td> <td>marker &#x70B9;&#x51FB;&#x4E8B;&#x4EF6;&#x56DE;&#x8C03;&#x4F1A;&#x8FD4;&#x56DE;&#x6B64; id&#x3002;<strong>&#x5EFA;&#x8BAE;&#x4E3A;&#x6BCF;&#x4E2A; marker &#x8BBE;&#x7F6E;&#x4E0A; number &#x7C7B;&#x578B; id&#xFF0C;&#x4FDD;&#x8BC1;&#x66F4;&#x65B0; marker &#x65F6;&#x6709;&#x66F4;&#x597D;&#x7684;&#x6027;&#x80FD;&#x3002;</strong></td> <td></td></tr> <tr><td>latitude</td> <td>&#x7EAC;&#x5EA6;</td> <td>number</td> <td>&#x662F;</td> <td>&#x6D6E;&#x70B9;&#x6570;&#xFF0C;&#x8303;&#x56F4; -90 ~ 90</td> <td></td></tr> <tr><td>longitude</td> <td>&#x7ECF;&#x5EA6;</td> <td>number</td> <td>&#x662F;</td> <td>&#x6D6E;&#x70B9;&#x6570;&#xFF0C;&#x8303;&#x56F4; -180 ~ 180</td> <td></td></tr> <tr><td>title</td> <td>&#x6807;&#x6CE8;&#x70B9;&#x540D;</td> <td>string</td> <td>&#x5426;</td> <td>&#x70B9;&#x51FB;&#x65F6;&#x663E;&#x793A;&#xFF0C;callout&#x5B58;&#x5728;&#x65F6;&#x5C06;&#x88AB;&#x5FFD;&#x7565;</td> <td></td></tr> <tr><td>zIndex</td> <td>&#x663E;&#x793A;&#x5C42;&#x7EA7;</td> <td>number</td> <td>&#x5426;</td> <td></td> <td><a href="../framework/compatibility.html">2.3.0</a></td></tr> <tr><td>iconPath</td> <td>&#x663E;&#x793A;&#x7684;&#x56FE;&#x6807;</td> <td>string</td> <td>&#x662F;</td> <td>&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x56FE;&#x7247;&#x8DEF;&#x5F84;&#xFF0C;&#x652F;&#x6301;&#x7F51;&#x7EDC;&#x8DEF;&#x5F84;&#x3001;&#x672C;&#x5730;&#x8DEF;&#x5F84;&#x3001;&#x4EE3;&#x7801;&#x5305;&#x8DEF;&#x5F84;&#xFF08;<a href="../framework/compatibility.html">2.3.0</a>&#xFF09;</td> <td></td></tr> <tr><td>rotate</td> <td>&#x65CB;&#x8F6C;&#x89D2;&#x5EA6;</td> <td>number</td> <td>&#x5426;</td> <td>&#x987A;&#x65F6;&#x9488;&#x65CB;&#x8F6C;&#x7684;&#x89D2;&#x5EA6;&#xFF0C;&#x8303;&#x56F4; 0 ~ 360&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; 0</td> <td></td></tr> <tr><td>alpha</td> <td>&#x6807;&#x6CE8;&#x7684;&#x900F;&#x660E;&#x5EA6;</td> <td>number</td> <td>&#x5426;</td> <td>&#x9ED8;&#x8BA4; 1&#xFF0C;&#x65E0;&#x900F;&#x660E;&#xFF0C;&#x8303;&#x56F4; 0 ~ 1</td> <td></td></tr> <tr><td>width</td> <td>&#x6807;&#x6CE8;&#x56FE;&#x6807;&#x5BBD;&#x5EA6;</td> <td>number/string</td> <td>&#x5426;</td> <td>&#x9ED8;&#x8BA4;&#x4E3A;&#x56FE;&#x7247;&#x5B9E;&#x9645;&#x5BBD;&#x5EA6;</td> <td></td></tr> <tr><td>height</td> <td>&#x6807;&#x6CE8;&#x56FE;&#x6807;&#x9AD8;&#x5EA6;</td> <td>number/string</td> <td>&#x5426;</td> <td>&#x9ED8;&#x8BA4;&#x4E3A;&#x56FE;&#x7247;&#x5B9E;&#x9645;&#x9AD8;&#x5EA6;</td> <td></td></tr> <tr><td>callout</td> <td>&#x81EA;&#x5B9A;&#x4E49;&#x6807;&#x8BB0;&#x70B9;&#x4E0A;&#x65B9;&#x7684;&#x6C14;&#x6CE1;&#x7A97;&#x53E3;</td> <td>Object</td> <td>&#x5426;</td> <td>&#x652F;&#x6301;&#x7684;&#x5C5E;&#x6027;&#x89C1;&#x4E0B;&#x8868;&#xFF0C;&#x53EF;&#x8BC6;&#x522B;&#x6362;&#x884C;&#x7B26;&#x3002;</td> <td><a href="../framework/compatibility.html">1.2.0</a></td></tr> <tr><td>label</td> <td>&#x4E3A;&#x6807;&#x8BB0;&#x70B9;&#x65C1;&#x8FB9;&#x589E;&#x52A0;&#x6807;&#x7B7E;</td> <td>Object</td> <td>&#x5426;</td> <td>&#x652F;&#x6301;&#x7684;&#x5C5E;&#x6027;&#x89C1;&#x4E0B;&#x8868;&#xFF0C;&#x53EF;&#x8BC6;&#x522B;&#x6362;&#x884C;&#x7B26;&#x3002;</td> <td><a href="../framework/compatibility.html">1.2.0</a></td></tr> <tr><td>anchor</td> <td>&#x7ECF;&#x7EAC;&#x5EA6;&#x5728;&#x6807;&#x6CE8;&#x56FE;&#x6807;&#x7684;&#x951A;&#x70B9;&#xFF0C;&#x9ED8;&#x8BA4;&#x5E95;&#x8FB9;&#x4E2D;&#x70B9;</td> <td>Object</td> <td>&#x5426;</td> <td>{x, y}&#xFF0C;x &#x8868;&#x793A;&#x6A2A;&#x5411;(0-1)&#xFF0C;y &#x8868;&#x793A;&#x7AD6;&#x5411;(0-1)&#x3002;{x: .5, y: 1} &#x8868;&#x793A;&#x5E95;&#x8FB9;&#x4E2D;&#x70B9;</td> <td><a href="../framework/compatibility.html">1.2.0</a></td></tr> <tr><td>aria-label</td> <td>&#x65E0;&#x969C;&#x788D;&#x8BBF;&#x95EE;&#xFF0C;&#xFF08;&#x5C5E;&#x6027;&#xFF09;&#x5143;&#x7D20;&#x7684;&#x989D;&#x5916;&#x63CF;&#x8FF0;</td> <td>string</td> <td>&#x5426;</td> <td></td> <td><a href="../framework/compatibility.html">2.5.0</a></td></tr></tbody></table>
+
+<h2 id="12-marker-&#x4E0A;&#x7684;&#x6C14;&#x6CE1;-callout">1.2 marker &#x4E0A;&#x7684;&#x6C14;&#x6CE1; callout</h2>
+<table><thead><tr><th>&#x5C5E;&#x6027;</th> <th>&#x8BF4;&#x660E;</th> <th>&#x7C7B;&#x578B;</th> <th>&#x6700;&#x4F4E;&#x7248;&#x672C;</th></tr></thead> <tbody><tr><td>content</td> <td>&#x6587;&#x672C;</td> <td>string</td> <td><a href="../framework/compatibility.html">1.2.0</a></td></tr> <tr><td>color</td> <td>&#x6587;&#x672C;&#x989C;&#x8272;</td> <td>string</td> <td><a href="../framework/compatibility.html">1.2.0</a></td></tr> <tr><td>fontSize</td> <td>&#x6587;&#x5B57;&#x5927;&#x5C0F;</td> <td>number</td> <td><a href="../framework/compatibility.html">1.2.0</a></td></tr> <tr><td>borderRadius</td> <td>&#x8FB9;&#x6846;&#x5706;&#x89D2;</td> <td>number</td> <td><a href="../framework/compatibility.html">1.2.0</a></td></tr> <tr><td>borderWidth</td> <td>&#x8FB9;&#x6846;&#x5BBD;&#x5EA6;</td> <td>number</td> <td><a href="../framework/compatibility.html">2.3.0</a></td></tr> <tr><td>borderColor</td> <td>&#x8FB9;&#x6846;&#x989C;&#x8272;</td> <td>string</td> <td><a href="../framework/compatibility.html">2.3.0</a></td></tr> <tr><td>bgColor</td> <td>&#x80CC;&#x666F;&#x8272;</td> <td>string</td> <td><a href="../framework/compatibility.html">1.2.0</a></td></tr> <tr><td>padding</td> <td>&#x6587;&#x672C;&#x8FB9;&#x7F18;&#x7559;&#x767D;</td> <td>number</td> <td><a href="../framework/compatibility.html">1.2.0</a></td></tr> <tr><td>display</td> <td>&apos;BYCLICK&apos;:&#x70B9;&#x51FB;&#x663E;&#x793A;; &apos;ALWAYS&apos;:&#x5E38;&#x663E;</td> <td>string</td> <td><a href="../framework/compatibility.html">1.2.0</a></td></tr> <tr><td>textAlign</td> <td>&#x6587;&#x672C;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;&#x3002;&#x6709;&#x6548;&#x503C;: left, right, center</td> <td>string</td> <td><a href="../framework/compatibility.html">1.6.0</a></td></tr></tbody></table>
+
+<h1 id="2control">2.control</h1>
+<p>&#x5728;&#x5730;&#x56FE;&#x4E0A;&#x663E;&#x793A;&#x63A7;&#x4EF6;&#xFF0C;&#x63A7;&#x4EF6;&#x4E0D;&#x968F;&#x7740;&#x5730;&#x56FE;&#x79FB;&#x52A8;</p>
+<table><thead><tr><th>&#x5C5E;&#x6027;</th> <th>&#x8BF4;&#x660E;</th> <th>&#x7C7B;&#x578B;</th> <th>&#x5FC5;&#x586B;</th> <th>&#x5907;&#x6CE8;</th></tr></thead> <tbody><tr><td>id</td> <td>&#x63A7;&#x4EF6;id</td> <td>number</td> <td>&#x5426;</td> <td>&#x5728;&#x63A7;&#x4EF6;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;&#x56DE;&#x8C03;&#x4F1A;&#x8FD4;&#x56DE;&#x6B64;id</td></tr> <tr><td>position</td> <td>&#x63A7;&#x4EF6;&#x5728;&#x5730;&#x56FE;&#x7684;&#x4F4D;&#x7F6E;</td> <td>object</td> <td>&#x662F;</td> <td>&#x63A7;&#x4EF6;&#x76F8;&#x5BF9;&#x5730;&#x56FE;&#x4F4D;&#x7F6E;</td></tr> <tr><td>iconPath</td> <td>&#x663E;&#x793A;&#x7684;&#x56FE;&#x6807;</td> <td>string</td> <td>&#x662F;</td> <td>&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x56FE;&#x7247;&#x8DEF;&#x5F84;&#xFF0C;&#x652F;&#x6301;&#x672C;&#x5730;&#x8DEF;&#x5F84;&#x3001;&#x4EE3;&#x7801;&#x5305;&#x8DEF;&#x5F84;</td></tr> <tr><td>clickable</td> <td>&#x662F;&#x5426;&#x53EF;&#x70B9;&#x51FB;</td> <td>boolean</td> <td>&#x5426;</td> <td>&#x9ED8;&#x8BA4;&#x4E0D;&#x53EF;&#x70B9;&#x51FB;</td></tr></tbody></table>
+
+<h1 id="&#x4E8C;&#x3001;&#x5C0F;&#x7A0B;&#x5E8F;&#x7684;&#x5B9A;&#x4F4D;&#x76F8;&#x5173;api">&#x4E8C;&#x3001;&#x5C0F;&#x7A0B;&#x5E8F;&#x7684;&#x5B9A;&#x4F4D;&#x76F8;&#x5173;api</h1>
+<p><a href="https://developers.weixin.qq.com/miniprogram/dev/api/location/wx.stopLocationUpdate.html" target="_blank">https://developers.weixin.qq.com/miniprogram/dev/api/location/wx.stopLocationUpdate.html</a></p>
+<h1 id="&#x4E09;&#x3001;&#x83B7;&#x53D6;&#x8BBE;&#x5907;&#x7684;&#x57FA;&#x672C;&#x4FE1;&#x606F;&#x7684;api">&#x4E09;&#x3001;&#x83B7;&#x53D6;&#x8BBE;&#x5907;&#x7684;&#x57FA;&#x672C;&#x4FE1;&#x606F;&#x7684;api</h1>
+<p><a href="https://developers.weixin.qq.com/miniprogram/dev/api/base/system/system-info/wx.getSystemInfoSync.html" target="_blank">https://developers.weixin.qq.com/miniprogram/dev/api/base/system/system-info/wx.getSystemInfoSync.html</a></p>
+<ul>
+<li><p>&#x540C;&#x6B65;</p>
+<pre><code>try {
+  // &#x5982;&#x679C;&#x6761;&#x4EF6;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x4E0B;&#x53BB;
+  const res = wx.getSystemInfoSync()
+  console.log(res)
+} catch () {
+  // &#x5F02;&#x5E38;
+}
+</code></pre></li>
+<li><p>&#x5F02;&#x6B65;</p>
+<pre><code>wx.getSystemInfo({
+  success: (res) =&gt; {}
+})
+</code></pre></li>
+</ul>
+<p><strong>&#x56E0;&#x4E3A;&#x8BBE;&#x5907;&#x7684;&#x4FE1;&#x606F;&#x53EF;&#x80FD;&#x5728;&#x591A;&#x4E2A;&#x5730;&#x65B9;&#x4F7F;&#x7528;&#xFF0C;&#x6240;&#x4EE5;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x5168;&#x5C40;&#x53D8;&#x91CF;</strong></p>
+<h2 id="1&#x3001;&#x8BBE;&#x7F6E;&#x5168;&#x5C40;&#x7684;&#x53D8;&#x91CF;-appjs">1&#x3001;&#x8BBE;&#x7F6E;&#x5168;&#x5C40;&#x7684;&#x53D8;&#x91CF; app.js</h2>
+<pre><code>globalData: {
+    userInfo: null,
+    deviceinfo: null
+},
+</code></pre><h2 id="2&#x83B7;&#x53D6;&#x8BBE;&#x5907;&#x4FE1;&#x606F;-appjs">2.&#x83B7;&#x53D6;&#x8BBE;&#x5907;&#x4FE1;&#x606F; app.js</h2>
+<pre><code>App({
+    onLaunch () {
+        // &#x83B7;&#x53D6;&#x8BBE;&#x5907;&#x7684;&#x4FE1;&#x606F;
+        this.getDeviceInfoFn()
+
+    },
+    getDeviceInfoFn () {
+        wx.getSystemInfo({
+          success: (res) =&gt; {
+            console.log(res)
+            // &#x4FEE;&#x6539;&#x5168;&#x5C40;&#x6570;&#x636E;
+            this.globalData.deviceinfo = res
+          }
+        })
+    }
+})
+</code></pre><h2 id="3&#x5730;&#x56FE;&#x9875;&#x9762;&#x83B7;&#x53D6;&#x5168;&#x5C40;&#x7684;&#x8BBE;&#x5907;&#x4FE1;&#x606F;">3.&#x5730;&#x56FE;&#x9875;&#x9762;&#x83B7;&#x53D6;&#x5168;&#x5C40;&#x7684;&#x8BBE;&#x5907;&#x4FE1;&#x606F;</h2>
+<pre><code>// pages/map/map.js
+const app = getApp();
+console.log(app.globalData)
+// const { screenWidth, screenHeight } = app.globalData.deviceinfo
+const { globalData: { deviceinfo: { screenWidth, screenHeight }}} = app
+</code></pre><h1 id="&#x56DB;&#x3001;&#x5904;&#x7406;&#x5C0F;&#x7A0B;&#x5E8F;&#x4E2D;&#x7684;html&#x6807;&#x7B7E;">&#x56DB;&#x3001;&#x5904;&#x7406;&#x5C0F;&#x7A0B;&#x5E8F;&#x4E2D;&#x7684;html&#x6807;&#x7B7E;</h1>
+<h2 id="1rich-text">1.rich-text</h2>
+<p><a href="http://ueditor.baidu.com/website/" target="_blank">http://ueditor.baidu.com/website/</a></p>
+<p><a href="https://www.cnblogs.com/sky903700252/p/7846240.html" target="_blank">https://www.cnblogs.com/sky903700252/p/7846240.html</a></p>
+<pre><code>var data = `&lt;p&gt;&lt;span style=&quot;font-size: 24px;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;&#x5728;&#x5965;&#x8FD0;&#x8D44;&#x683C;&#x8D5B;&#x7B2C;&#x4E09;&#x9636;&#x6BB5;&#x7ED3;&#x675F;&#x540E;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;&#xFF0C;&#x56FD;&#x9645;&#x7BEE;&#x8054;&#x516C;&#x5E03;&#x4E86;&#x4E16;&#x754C;&#x5973;&#x7BEE;&#x6700;&#x65B0;&#x6392;&#x540D;&#x3002;&#x6709;&#x8DA3;&#x7684;&#x662F;&#xFF0C;&#x4EE5;&#x4E09;&#x8FDE;&#x80DC;&#x6218;&#x7EE9;&#x664B;&#x7EA7;&#x4E1C;&#x4EAC;&#x5965;&#x8FD0;&#x4F1A;&#x7684;&#x4E2D;&#x56FD;&#x5973;&#x7BEE;&#x6392;&#x540D;&#x7ADF;&#x7136;&#x4ECE;&#x7B2C;8&#x540D;&#x4E0B;&#x6ED1;&#x5230;
+&#x4E86;&#x7B2C;9&#x540D;&#xFF01;&#x4E0D;&#x8FC7;&#x8FD9;&#x5E76;&#x4E0D;&#x5F71;&#x54CD;&#x4E2D;&#x56FD;&#x5973;&#x7BEE;&#x4ECD;&#x7136;&#x529B;&#x538B;&#x65E5;&#x672C;&#xFF0C;&lt;span style=&quot;font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; background-color: rgb(255, 255, 255); color: rgb(255, 0, 0);&quot;&gt;&lt;em&gt;&#x5C45;&#x4E8E;&#x4E9A;&#x6D32;&#x6392;&#x540D;&#x7684;&#x9996;&#x4F4D;&lt;/em&gt;&lt;/span&gt;&#x3002;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;&#x6BD4;&#x5229;&#x65F6;&#x961F;&#x6210;&#x4E3A;&#x4E86;&#x6700;&#x5927;&#x7684;&#x8D62;&#x5BB6;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;&#xFF0C;&#x5979;&#x4EEC;&#x4ECE;
+&#x7B2C;9&#x4F4D;&#x8FDE;&#x5347;&#x4E24;&#x4F4D;&#xFF0C;&#x8DC3;&#x5C45;&#x81F3;&#x7B2C;7&#x4F4D;&#xFF0C;&#x9664;&#x4E86;&#x4E2D;&#x56FD;&#x3001;&#x585E;&#x5C14;&#x7EF4;&#x4E9A;&#x548C;&#x6BD4;&#x5229;&#x65F6;&#x5916;&#xFF0C;&#x4E16;&#x754C;&#x6392;&#x540D;&#x524D;6&#x540D;&#x7684;&#x4F4D;&#x6B21;&#x548C;&#x539F;&#x5148;&#x4FDD;&#x6301;&#x4E0D;&#x53D8;&#x3002;&#x73B0;&#x4E16;&#x754C;&#x6392;&#x540D;&#x524D;10&#x7684;&#x7403;&#x961F;&#x5206;&#x522B;&#x662F;&#xFF1A;1.&#x7F8E;&#x56FD;&#x3001;2.&#x6FB3;&#x5927;&#x5229;&#x4E9A;&#x3001;3.&#x897F;&#x73ED;&#x7259;&#x3001;4.&#x52A0;&#x62FF;&#x5927;&#x3001;5.&#x6CD5;&#x56FD;&#x3001;6.&#x571F;&#x8033;&#x5176;&#x3001;7.&#x6BD4;&#x5229;&#x65F6;&#x3001;8.&#x585E;&#x5C14;&#x7EF4;&#x4E9A;&#x3001;9.&#x4E2D;&#x56FD;&#x3001;10.&#x65E5;&#x672C;&#x3002;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;ul class=&quot; list-paddingleft-2&quot; style=&quot;list-style-type: disc;&quot;&gt;&lt;li&gt;&lt;p&gt;&lt;span style=&quot;color:
+rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;111&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;2222&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;33333&lt;br/&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;`;
+    // &#x4FEE;&#x6539;&#x72B6;&#x6001;
+    this.setData({
+      proid, // &#x4E0D;&#x9700;&#x8981;&#x4ECE; &#x54CD;&#x5E94;&#x6570;&#x636E;&#x4E2D;&#x62FF;&#x53D6;&#xFF0C;&#x4F46;&#x662F;&#x53EF;&#x4EE5;&#x4ECE;&#x90A3;&#x62FF;&#xFF08;&#x53EF;&#x4EE5;&#x62FF;&#xFF0C;&#x4F46;&#x4E0D;&#x9700;&#x8981;&#xFF09;
+      proname,
+      proimg,
+      detail: data,
+      price
+    })
+
+// pages/detail/detail.wxml
+&lt;rich-text nodes=&quot;{{detail}}&quot; &gt;&lt;/rich-text&gt;
+</code></pre><h2 id="2wxparse--httpsgithubcomicindywxparse">2.wxparse  <a href="https://github.com/icindy/wxParse" target="_blank">https://github.com/icindy/wxParse</a></h2>
+<p>&#x7B2C;&#x4E00;&#x6B65;&#x4E0B;&#x8F7D;wxParse&#xFF0C;&#x53C2;&#x8003;&#x7F51;&#x76D8;&#x94FE;&#x63A5;
+&#x94FE;&#x63A5;&#xFF1A;<a href="https://pan.baidu.com/s/1bMvyar60I1BAqzr5qxHZXw" target="_blank">https://pan.baidu.com/s/1bMvyar60I1BAqzr5qxHZXw</a> 
+&#x63D0;&#x53D6;&#x7801;&#xFF1A;gv9w</p>
+<p>&#x7B2C;&#x4E8C;&#x6B65; &#x590D;&#x5236;&#x6587;&#x4EF6;&#x5939;wxParse&#x81F3;&#x9879;&#x76EE;&#x8DDF;&#x76EE;&#x5F55;&#x4E0B;</p>
+<p>&#x7B2C;&#x4E09;&#x6B65; &#x8BE6;&#x60C5;&#x9875;&#x9762;&#x5F15;&#x5165;&#x5FC5;&#x8981;&#x7684;&#x6587;&#x4EF6;</p>
+<pre><code>// pages/detail/detail.js
+var WxParse = require(&apos;../../wxParse/wxParse.js&apos;);
+
+// pages/detail/detail.wxss
+@import &quot;/wxParse/wxParse.wxss&quot;;
+</code></pre><p>&#x7B2C;&#x56DB;&#x6B65; &#x6570;&#x636E;&#x7ED1;&#x5B9A;</p>
+<p>&#x5F53;&#x6570;&#x636E;&#x8BF7;&#x6C42;&#x6210;&#x529F;&#x4E4B;&#x540E;&#xFF0C;&#x4F1A;&#x5F97;&#x5230;&#x4E00;&#x6BB5;HTML&#x4EE3;&#x7801;&#xFF0C;&#x5F62;&#x5982;</p>
+<pre><code>var detail = `&lt;p style=&quot;-webkit-tap-highlight-color: transparent; box-sizing: border-box; margin-top: 16px; margin-bottom: 16px; padding: 0px; color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;font-size: 24px;&quot;&gt;&lt;strong&gt;&#x4E60;&#x8FD1;&#x5E73;&#x6307;&#x51FA;&lt;/strong&gt;&lt;/span&gt;&#xFF0C;&#x603B;&#x7406;&#x5148;&#x751F;&#x662F;&#x4E2D;&#x56FD;&#x4EBA;&#x6C11;&#x7684;&#x8001;&#x670B;&#x53CB;&#xFF0C;&#x5728;&#x5F53;&#x524D;&#x4E2D;&#x56FD;&#x4EBA;&#x6C11;&#x594B;&#x529B;&#x6297;&#x51FB;&#x65B0;&#x51A0;&#x80BA;&#x708E;&#x75AB;&#x60C5;&#x7684;&#x5173;&#x952E;&#x65F6;&#x523B;&#xFF0C;&#x603B;&#x7406;&#x5148;&#x751F;&#x63D0;&#x51FA;&#x540C;&#x6211;&#x901A;&#x7535;&#x8BDD;&#xFF0C;
+&#x4F53;&#x73B0;&#x4E86;&#x9A6C;&#x65B9;&#x5BF9;&#x4E2D;&#x65B9;&#x7684;&#x60C5;&#x8C0A;&#x548C;&#x652F;&#x6301;&#x3002;&#x75AB;&#x60C5;&#x96BE;&#x514D;&#x6682;&#x65F6;&#x5F71;&#x54CD;&#x4E2D;&#x9A6C;&#x6B63;&#x5E38;&#x4EBA;&#x5458;&#x5F80;&#x6765;&#xFF0C;&#x4F46;&#x52A8;&#x6447;&#x4E0D;&#x4E86;&#x4E24;&#x56FD;&#x4EBA;&#x6C11;&#x7684;&#x6DF1;&#x539A;&#x53CB;&#x8C0A;&#x3002;&#x4E2D;&#x9A6C;&#x53CC;&#x65B9;&#x8981;&#x5728;&#x643A;&#x624B;&#x5E94;&#x5BF9;&#x75AB;&#x60C5;&#x6311;&#x6218;&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x6301;&#x7EED;&#x6DF1;&#x5316;&#x4E24;&#x56FD;
+&#x5173;&#x7CFB;&#x7279;&#x522B;&#x662F;&#x5171;&#x5EFA;&#x201C;&lt;span style=&quot;color: rgb(255, 0, 0); text-decoration: underline;&quot;&gt;&#x4E00;&#x5E26;&#x4E00;&#x8DEF;&lt;/span&gt;&#x201D;&#x5408;&#x4F5C;&#xFF0C;&#x521B;&#x9020;&#x66F4;&#x591A;&#x5408;&#x4F5C;&#x6210;&#x679C;&#xFF0C;&#x9020;&#x798F;&#x4E24;&#x56FD;&#x548C;&#x4E24;&#x56FD;&#x4EBA;&#x6C11;&#x3002;&lt;
+/p&gt;&lt;p style=&quot;-webkit-tap-highlight-color: transparent; box-sizing: border-box; margin-top: 16px; margin-bottom: 16px; padding: 0px; color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;,
+&amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;font-size: 24px;&quot;&gt;&lt;strong&gt;&#x4E60;&#x8FD1;&#x5E73;&#x5F3A;&#x8C03;&lt;/strong&gt;&lt;/span&gt;&#xFF0C;&#x75AB;&#x60C5;&#x53D1;&#x751F;&#x4EE5;&#x6765;&#xFF0C;&#x4E2D;&#x56FD;&#x653F;&#x5E9C;&#x9AD8;&#x5EA6;&#x91CD;&#x89C6;&#xFF0C;&#x4E3E;&#x5168;&#x56FD;&#x4E4B;&#x529B;&#xFF0C;&#x56E2;&#x7ED3;&#x4E00;&#x5FC3;&#xFF0C;&#x91C7;&#x53D6;&#x6700;&#x5168;&#x9762;&#x3001;&#x6700;&#x4E25;&#x683C;&#x3001;&#x6700;&#x5F7B;&#x5E95;&#x7684;&#x9632;&#x63A7;&#x4E3E;&#x63AA;&#xFF0C;&#x53D6;&#x5F97;&#x79EF;&#x6781;&#x6210;&#x6548;&#xFF0C;&#x75C5;&#x4EA1;&#x7387;&#x4FDD;&#x6301;&#x5728;&#x8F83;&#x4F4E;&#x6C34;&#x5E73;&#xFF0C;&#x6CBB;&#x7597;&#x65B9;&#x6CD5;&#x4E0D;&#x65AD;&#x7A81;&#x7834;&#xFF0C;&#x6CBB;&#x6108;&#x7387;&#x6301;&#x7EED;&#x63D0;&#x5347;&#x3002;&#x4E2D;&#x56FD;&#x653F;&#x5E9C;&#x5C06;&#x5E26;&#x9886;&#x4E2D;&#x56FD;&#x4EBA;&#x6C11;&#x575A;&#x5B9A;&#x4FE1;&#x5FC3;&#x3001;&#x540C;&#x821F;&#x5171;&#x6D4E;&#x3001;&#x79D1;&#x5B66;&#x9632;&#x6CBB;&#x3001;&#x7CBE;&#x51C6;&#x65BD;&#x7B56;&#xFF0C;&#x575A;&#x51B3;&#x6253;&#x8D62;&#x75AB;&#x60C5;&#x9632;&#x63A7;&#x963B;&#x51FB;&#x6218;&#x3002;&#x6211;&#x4EEC;&#x4E5F;
+&#x4E00;&#x5B9A;&#x80FD;&#x628A;&#x75AB;&#x60C5;&#x5F71;&#x54CD;&#x964D;&#x5230;&#x6700;&#x4F4E;&#xFF0C;&#x4FDD;&#x6301;&#x4E2D;&#x56FD;&#x7ECF;&#x6D4E;&#x53D1;&#x5C55;&#x52BF;&#x5934;&#xFF0C;&#x52AA;&#x529B;&#x5B9E;&#x73B0;&#x4ECA;&#x5E74;&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;&lt;em&gt;&#x53D1;&#x5C55;&#x76EE;&#x6807;&#x4EFB;&#x52A1;&lt;/em&gt;&lt;/span&gt;&#xFF0C;&#x540C;&#x65F6;&#x7EE7;&#x7EED;&#x671D;&#x6211;&#x4EEC;&#x7684;&#x957F;&#x8FDC;&#x76EE;&#x6807;&#x575A;&#x5B9A;&#x8FC8;&#x8FDB;&#x3002;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;`
+</code></pre><p>&#x7ED9;wxparse&#x8D4B;&#x503C;</p>
+<pre><code>/**
+* WxParse.wxParse(bindName , type, data, target,imagePadding)
+* 1.bindName&#x7ED1;&#x5B9A;&#x7684;&#x6570;&#x636E;&#x540D;(&#x5FC5;&#x586B;)
+* 2.type&#x53EF;&#x4EE5;&#x4E3A;html&#x6216;&#x8005;md(&#x5FC5;&#x586B;)
+* 3.data&#x4E3A;&#x4F20;&#x5165;&#x7684;&#x5177;&#x4F53;&#x6570;&#x636E;(&#x5FC5;&#x586B;)
+* 4.target&#x4E3A;Page&#x5BF9;&#x8C61;,&#x4E00;&#x822C;&#x4E3A;this(&#x5FC5;&#x586B;)
+* 5.imagePadding&#x4E3A;&#x5F53;&#x56FE;&#x7247;&#x81EA;&#x9002;&#x5E94;&#x662F;&#x5DE6;&#x53F3;&#x7684;&#x5355;&#x4E00;padding(&#x9ED8;&#x8BA4;&#x4E3A;0,&#x53EF;&#x9009;)
+*/
+WxParse.wxParse(&apos;article&apos;, &apos;html&apos;, data, this, 5);
+</code></pre><p>&#x6A21;&#x7248;&#x5F15;&#x7528; pages/detail/detail.wxml</p>
+<pre><code>&lt;import src=&quot;/wxParse/wxParse.wxml&quot;/&gt;
+&lt;template is=&quot;wxParse&quot; data=&quot;{{wxParseData:article.nodes}}&quot;/&gt;
+</code></pre><p>js&#x4FEE;&#x6539;&#x7A97;&#x53E3;
+<a href="https://developers.weixin.qq.com/miniprogram/dev/api/ui/navigation-bar/wx.setNavigationBarTitle.html" target="_blank">https://developers.weixin.qq.com/miniprogram/dev/api/ui/navigation-bar/wx.setNavigationBarTitle.html</a></p>
+<h1 id="&#x4E94;&#x3001;&#x5C0F;&#x7A0B;&#x5E8F;&#x4E2D;&#x7684;&#x6A21;&#x677F;&#x8BED;&#x6CD5;">&#x4E94;&#x3001;&#x5C0F;&#x7A0B;&#x5E8F;&#x4E2D;&#x7684;&#x6A21;&#x677F;&#x8BED;&#x6CD5;</h1>
+<p><a href="https://developers.weixin.qq.com/miniprogram/dev/reference/wxml/template.html" target="_blank">https://developers.weixin.qq.com/miniprogram/dev/reference/wxml/template.html</a></p>
+<p>WXML&#x63D0;&#x4F9B;&#x6A21;&#x677F;&#xFF08;template&#xFF09;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x6A21;&#x677F;&#x4E2D;&#x5B9A;&#x4E49;&#x4EE3;&#x7801;&#x7247;&#x6BB5;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x5730;&#x65B9;&#x8C03;&#x7528;&#x3002;</p>
+<p>&#x5B9A;&#x4E49;&#x6A21;&#x677F;
+&#x4F7F;&#x7528; name &#x5C5E;&#x6027;&#xFF0C;&#x4F5C;&#x4E3A;&#x6A21;&#x677F;&#x7684;&#x540D;&#x5B57;&#x3002;&#x7136;&#x540E;&#x5728;<template>&#x5185;&#x5B9A;&#x4E49;&#x4EE3;&#x7801;&#x7247;&#x6BB5;&#xFF0C;&#x5982;&#xFF1A;</template></p>
+<pre><code>&lt;!--
+  index: int
+  msg: string
+  time: string
+--&gt;
+&lt;template name=&quot;msgItem&quot;&gt;
+  &lt;view&gt;
+    &lt;text&gt; {{index}}: {{msg}} &lt;/text&gt;
+    &lt;text&gt; Time: {{time}} &lt;/text&gt;
+  &lt;/view&gt;
+&lt;/template&gt;
+</code></pre><p>&#x4F7F;&#x7528;&#x6A21;&#x677F;
+&#x4F7F;&#x7528; is &#x5C5E;&#x6027;&#xFF0C;&#x58F0;&#x660E;&#x9700;&#x8981;&#x7684;&#x4F7F;&#x7528;&#x7684;&#x6A21;&#x677F;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x6A21;&#x677F;&#x6240;&#x9700;&#x8981;&#x7684; data &#x4F20;&#x5165;&#xFF0C;&#x5982;</p>
+<pre><code>wxml
+&lt;template is=&quot;msgItem&quot; data=&quot;{{...item}}&quot;/&gt;
+// js
+Page({
+  data: {
+    item: {
+      index: 0,
+      msg: &apos;this is a template&apos;,
+      time: &apos;2016-09-15&apos;
+    }
+  }
+})
+</code></pre><h1 id="&#x516D;&#x3001;&#x5C0F;&#x7A0B;&#x5E8F;&#x5E38;&#x7528;api&#x4E4B;&#x62CD;&#x7167;">&#x516D;&#x3001;&#x5C0F;&#x7A0B;&#x5E8F;&#x5E38;&#x7528;api&#x4E4B;&#x62CD;&#x7167;</h1>
+<h2 id="1&#x9884;&#x89C8;&#x56FE;&#x7247;">1.&#x9884;&#x89C8;&#x56FE;&#x7247;</h2>
+<p><a href="https://developers.weixin.qq.com/miniprogram/dev/api/media/image/wx.previewImage.html" target="_blank">https://developers.weixin.qq.com/miniprogram/dev/api/media/image/wx.previewImage.html</a></p>
+<pre><code>// pages/home/home.wxml
+ &lt;image lazy-load=&quot;{{true}}&quot; mode=&quot;widthFix&quot; show-menu-by-longpress=&quot;{{true}}&quot; src=&quot;{{&apos;http://daxun.kuboy.top&apos; + item}}&quot; data-index=&quot;index&quot; bindtap=&quot;previewImage&quot;&gt;&lt;/image&gt;
+
+// pages/home/home.js
+previewImage (event) {
+    let arr = []; // &#x9884;&#x7559;&#x7A7A;&#x6570;&#x7EC4;
+    let index = event.currentTarget.dataset.index // &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x70B9;&#x51FB;&#x7684;&#x56FE;&#x7247;&#x7684;&#x7D22;&#x5F15;
+    this.data.bannerlist.map(item =&gt; { // &#x5C06;&#x5904;&#x7406;&#x7684;&#x6570;&#x636E;&#x538B;&#x5165;&#x6570;&#x7EC4;
+     arr.push(&apos;http://daxun.kuboy.top&apos; + item)
+    })
+    console.log(arr)
+    wx.previewImage({ // &#x8C03;&#x7528;&#x9884;&#x89C8;&#x56FE;&#x7247;
+      current: arr[index],
+      urls: arr
+    })
+  }
+</code></pre><h2 id="2&#x62CD;&#x7167;">2.&#x62CD;&#x7167;</h2>
+<p><a href="https://developers.weixin.qq.com/miniprogram/dev/api/media/image/wx.chooseImage.html" target="_blank">https://developers.weixin.qq.com/miniprogram/dev/api/media/image/wx.chooseImage.html</a></p>
+<p>wx.chooseImage(Object object)</p>
+<p>&#x4ECE;&#x672C;&#x5730;&#x76F8;&#x518C;&#x9009;&#x62E9;&#x56FE;&#x7247;&#x6216;&#x4F7F;&#x7528;&#x76F8;&#x673A;&#x62CD;&#x7167;</p>
+<table><thead><tr><th>&#x5C5E;&#x6027;</th> <th>&#x7C7B;&#x578B;</th> <th>&#x9ED8;&#x8BA4;&#x503C;</th> <th>&#x5FC5;&#x586B;</th> <th>&#x8BF4;&#x660E;</th></tr></thead> <tbody><tr><td>count</td> <td>number</td> <td>9</td> <td>&#x5426;</td> <td>&#x6700;&#x591A;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x7684;&#x56FE;&#x7247;&#x5F20;&#x6570;</td></tr> <tr><td>sizeType</td> <td>Array.&lt;string&gt;</td> <td>[&apos;original&apos;, &apos;compressed&apos;]</td> <td>&#x5426;</td> <td>&#x6240;&#x9009;&#x7684;&#x56FE;&#x7247;&#x7684;&#x5C3A;&#x5BF8;</td></tr> <tr><td>sourceType</td> <td>Array.&lt;string&gt;</td> <td>[&apos;album&apos;, &apos;camera&apos;]</td> <td>&#x5426;</td> <td>&#x9009;&#x62E9;&#x56FE;&#x7247;&#x7684;&#x6765;&#x6E90;</td></tr> <tr><td>success</td> <td>function</td> <td></td> <td>&#x5426;</td> <td>&#x63A5;&#x53E3;&#x8C03;&#x7528;&#x6210;&#x529F;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;</td></tr> <tr><td>fail</td> <td>function</td> <td></td> <td>&#x5426;</td> <td>&#x63A5;&#x53E3;&#x8C03;&#x7528;&#x5931;&#x8D25;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;</td></tr> <tr><td>complete</td> <td>function</td> <td></td> <td>&#x5426;</td> <td>&#x63A5;&#x53E3;&#x8C03;&#x7528;&#x7ED3;&#x675F;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF08;&#x8C03;&#x7528;&#x6210;&#x529F;&#x3001;&#x5931;&#x8D25;&#x90FD;&#x4F1A;&#x6267;&#x884C;&#xFF09;</td></tr></tbody></table>
+
+<p>object.sizeType &#x7684;&#x5408;&#x6CD5;&#x503C;</p>
+<table><thead><tr><th>&#x503C;</th> <th>&#x8BF4;&#x660E;</th> <th>&#x6700;&#x4F4E;&#x7248;&#x672C;</th></tr></thead> <tbody><tr><td>original</td> <td>&#x539F;&#x56FE;</td> <td></td></tr> <tr><td>compressed</td> <td>&#x538B;&#x7F29;&#x56FE;</td> <td></td></tr></tbody></table>
+
+<p>object.sourceType &#x7684;&#x5408;&#x6CD5;&#x503C;</p>
+<table><thead><tr><th>&#x503C;</th> <th>&#x8BF4;&#x660E;</th> <th>&#x6700;&#x4F4E;&#x7248;&#x672C;</th></tr></thead> <tbody><tr><td>album</td> <td>&#x4ECE;&#x76F8;&#x518C;&#x9009;&#x56FE;</td> <td></td></tr> <tr><td>camera</td> <td>&#x4F7F;&#x7528;&#x76F8;&#x673A;</td> <td></td></tr></tbody></table>
+
+<p>object.success &#x56DE;&#x8C03;&#x51FD;</p>
+<table><thead><tr><th>&#x5C5E;&#x6027;</th> <th>&#x7C7B;&#x578B;</th> <th>&#x8BF4;&#x660E;</th> <th>&#x6700;&#x4F4E;&#x7248;&#x672C;</th></tr></thead> <tbody><tr><td>tempFilePaths</td> <td>Array.&lt;string&gt;</td> <td>&#x56FE;&#x7247;&#x7684;&#x672C;&#x5730;&#x4E34;&#x65F6;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x5217;&#x8868; (&#x672C;&#x5730;&#x8DEF;&#x5F84;)</td> <td></td></tr> <tr><td>tempFiles</td> <td>Array.&lt;Object&gt;</td> <td>&#x56FE;&#x7247;&#x7684;&#x672C;&#x5730;&#x4E34;&#x65F6;&#x6587;&#x4EF6;&#x5217;&#x8868;</td> <td><a href="../../../framework/compatibility.html">1.2.0</a></td></tr></tbody></table>
+
+<p>res.tempFiles &#x7684;&#x7ED3;&#x6784;</p>
+<table><thead><tr><th>&#x5C5E;&#x6027;</th> <th>&#x7C7B;&#x578B;</th> <th>&#x8BF4;&#x660E;</th></tr></thead> <tbody><tr><td>path</td> <td>string</td> <td>&#x672C;&#x5730;&#x4E34;&#x65F6;&#x6587;&#x4EF6;&#x8DEF;&#x5F84; (&#x672C;&#x5730;&#x8DEF;&#x5F84;)</td></tr> <tr><td>size</td> <td>number</td> <td>&#x672C;&#x5730;&#x4E34;&#x65F6;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#xFF0C;&#x5355;&#x4F4D; B</td></tr></tbody></table>
+
+<pre><code>&lt;button bindtap=&quot;chooseImg&quot;&gt;&#x62CD;&#x7167;&lt;/button&gt;
+&lt;image wx:for=&quot;{{img}}&quot; src=&quot;{{item}}&quot;&gt;&lt;/image&gt;
+
+Page({
+
+  /**
+   * &#x9875;&#x9762;&#x7684;&#x521D;&#x59CB;&#x6570;&#x636E;
+   */
+  data: {
+    img:&quot;&quot;
+  },
+
+  //&#x62CD;&#x7167;
+  chooseImg(){
+    wx.chooseImage({
+      count: 1,
+      sizeType: [&apos;original&apos;, &apos;compressed&apos;],
+      sourceType: [&apos;album&apos;, &apos;camera&apos;],
+      success:(res)=&gt;{
+        // tempFilePath&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;img&#x6807;&#x7B7E;&#x7684;src&#x5C5E;&#x6027;&#x663E;&#x793A;&#x56FE;&#x7247;
+        const tempFilePaths = res.tempFilePaths
+        console.log(tempFilePaths)
+        this.setData({img:tempFilePaths})
+      }
+    })
+  }
+})
+</code></pre><h1 id="&#x4E03;&#x3001;wxshowactionsheet">&#x4E03;&#x3001;wx.showActionSheet</h1>
+<p>&#x663E;&#x793A;&#x64CD;&#x4F5C;&#x83DC;&#x5355;</p>
+<table><thead><tr><th>&#x5C5E;&#x6027;</th> <th>&#x7C7B;&#x578B;</th> <th>&#x9ED8;&#x8BA4;&#x503C;</th> <th>&#x5FC5;&#x586B;</th> <th>&#x8BF4;&#x660E;</th></tr></thead> <tbody><tr><td>itemList</td> <td>Array.&lt;string&gt;</td> <td></td> <td>&#x662F;</td> <td>&#x6309;&#x94AE;&#x7684;&#x6587;&#x5B57;&#x6570;&#x7EC4;&#xFF0C;&#x6570;&#x7EC4;&#x957F;&#x5EA6;&#x6700;&#x5927;&#x4E3A; 6</td></tr> <tr><td>itemColor</td> <td>string</td> <td>#000000</td> <td>&#x5426;</td> <td>&#x6309;&#x94AE;&#x7684;&#x6587;&#x5B57;&#x989C;&#x8272;</td></tr> <tr><td>success</td> <td>function</td> <td></td> <td>&#x5426;</td> <td>&#x63A5;&#x53E3;&#x8C03;&#x7528;&#x6210;&#x529F;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;</td></tr> <tr><td>fail</td> <td>function</td> <td></td> <td>&#x5426;</td> <td>&#x63A5;&#x53E3;&#x8C03;&#x7528;&#x5931;&#x8D25;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;</td></tr> <tr><td>complete</td> <td>function</td> <td></td> <td>&#x5426;</td> <td>&#x63A5;&#x53E3;&#x8C03;&#x7528;&#x7ED3;&#x675F;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF08;&#x8C03;&#x7528;&#x6210;&#x529F;&#x3001;&#x5931;&#x8D25;&#x90FD;&#x4F1A;&#x6267;&#x884C;&#xFF09;</td></tr></tbody></table>
+
+
+<pre><code>// pages/user/user.wxml
+&lt;button bindtap=&quot;showActionSheet&quot;&gt;&#x64CD;&#x4F5C;&#x8868;&lt;/button&gt;
+// pages/user/user.js
+/**
+   * &#x6253;&#x5F00;&#x64CD;&#x4F5C;&#x8868;  &#x6A21;&#x62DF;&#x771F;&#x673A;&#x7684;&#x62CD;&#x7167;
+   */
+  showActionSheet () {
+    wx.showActionSheet({
+      itemList: [&apos;&#x62CD;&#x7167;&apos;, &apos;&#x4ECE;&#x624B;&#x673A;&#x76F8;&#x518C;&#x9009;&#x53D6;&apos;],
+      success(res) {
+        console.log(res.tapIndex)
+        switch (res.tapIndex) {
+          case 0: 
+            console.log(&apos;&#x8C03;&#x7528;&#x62CD;&#x7167;&apos;)
+            break;
+          case 1:
+            console.log(&apos;&#x4ECE;&#x624B;&#x673A;&#x76F8;&#x518C;&#x9009;&#x53D6;&apos;)
+            break;
+          default: 
+            console.log(&apos;&#x9009;&#x62E9;&#x4E86;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&apos;)
+        }
+      },
+      fail () {
+        console.log(&apos;&#x4F60;&#x70B9;&#x51FB;&#x53BB;&#x4E86;&#x53D6;&#x6D88;&#x6309;&#x94AE;&apos;)
+      }
+    })
+  }
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="03-微信小程序开发-首页以及详情页开发.html" class="navigation navigation-prev " aria-label="Previous page: 03-微信小程序开发-首页以及详情页开发">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="05-小程序UI组件库.html" class="navigation navigation-next " aria-label="Next page: 05-小程序UI组件库">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"04-小程序常用组件","level":"1.5","depth":1,"next":{"title":"05-小程序UI组件库","level":"1.6","depth":1,"path":"basics/05-小程序UI组件库.md","ref":"basics/05-小程序UI组件库.md","articles":[]},"previous":{"title":"03-微信小程序开发-首页以及详情页开发","level":"1.4","depth":1,"path":"basics/03-微信小程序开发-首页以及详情页开发.md","ref":"basics/03-微信小程序开发-首页以及详情页开发.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"basics/04-小程序常用组件.md","mtime":"2020-02-16T14:37:11.396Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-16T15:02:00.241Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
